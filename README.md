@@ -1,14 +1,9 @@
-# warehouse-waypoint-nav-[YOUR-NAME]
+# warehouse-waypoint-nav-yassin-bassem
 
 Autonomous TurtleBot3 Burger warehouse delivery robot — SLAM mapping, AMCL
 localization, full Nav2 autonomous navigation stack, and a scripted waypoint
 mission with live RViz markers.
 
-> Replace `[YOUR-NAME]` everywhere (repo name, package.xml maintainers, this
-> README) before you submit. Everywhere you see `<<FILL IN>>` you must
-> measure a real value from your own map/run and drop it in.
-
----
 
 ## 1. Project Overview and Mission
 
@@ -39,7 +34,7 @@ simulated warehouse:
 ## 2. Repository and Package Structure
 
 ```
-warehouse-waypoint-nav-[YOUR-NAME]/
+warehouse-waypoint-nav-yassin-bassem/
 ├── robot_navigation/            # ament_cmake package: Nav2 config + launch + map + rviz
 │   ├── config/
 │   │   ├── amcl.yaml
@@ -85,7 +80,7 @@ cd ~/workspaces/turtlebot_ws/src
 git clone https://github.com/ETGAH/warehouse_world.git
 
 # 2. Clone this repo alongside it
-git clone https://github.com/<you>/warehouse-waypoint-nav-[YOUR-NAME].git
+git clone https://github.com/<you>/warehouse-waypoint-nav-yassinnmhmoudd.git
 
 # 3. Build everything
 cd ~/workspaces/turtlebot_ws
@@ -296,25 +291,8 @@ your machine — this section is graded on honesty, not on having zero problems.
 
 ## 14. Screenshots
 
-Place these in `images/` and reference them here:
 
-* `images/mapping.png` — SLAM Toolbox mid-map, teleoperating through an aisle.
-* `images/localization.png` — AMCL particle cloud converged on the real pose.
-* `images/nav2_costmaps.png` — global + local costmap and a planned path from
-  a manual 2D Goal Pose.
-* `images/waypoints_all.png` — all four named waypoint markers visible.
-* `images/waypoint_active_green.png` — the active goal in green, others blue.
-* `images/waypoint_topic.png` — `ros2 topic echo /waypoint_markers --once` (or
-  RViz's Displays panel showing the `/waypoint_markers` topic subscribed).
-
----
 
 ## 15. Demonstration Video
 
-`<<FILL IN — link to your complete narrated demo video>>`
 
-The video must show, in order: warehouse setup (world + TurtleBot3 spawn),
-SLAM Toolbox mapping, AMCL localization + recovery, Nav2 bring-up with a
-manual 2D Goal Pose, the full autonomous mission end-to-end (including the
-30-second wait at the Loading Station), and the waypoint markers updating
-live throughout.
